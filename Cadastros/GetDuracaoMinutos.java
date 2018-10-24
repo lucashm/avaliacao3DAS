@@ -12,9 +12,9 @@ public class GetDuracaoMinutos {
 	}
 	
 	public int compute() {
-		if (minutosTermino > minutosInicio) 
+		if (minutosTermino > minutosInicio) {
 			duracaoMinutos = minutosTermino - minutosInicio;
-		else {
+		} else {
 			duracaoMinutos = 60 - minutosInicio + minutosTermino;
 			if (duracaoMinutos == 60) //caso especial
 				duracaoMinutos = 0;
